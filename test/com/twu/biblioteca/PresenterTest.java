@@ -14,8 +14,8 @@ public class PresenterTest {
     public void shouldPrintWelcomeMessage() throws Exception {
         ByteArrayOutputStream outSpy = new ByteArrayOutputStream();
         Presenter presenter = new Presenter(new PrintStream(outSpy));
-        presenter.printWelcomeMessage();
+        presenter.print("A message");
 
-        assertThat(outSpy.toString(), equalTo("Welcome to Biblioteca, the TWU Library"));
+        assertThat(outSpy.toString(), equalTo("A message"));
     }
 }

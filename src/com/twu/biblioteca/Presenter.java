@@ -9,7 +9,7 @@ public class Presenter {
         this.printStream = printStream;
     }
 
-    public void printWelcomeMessage() {
-        printStream.print("Welcome to Biblioteca, the TWU Library");
+    public void print(String message) {
+        printStream.print(message);
     }
 }
