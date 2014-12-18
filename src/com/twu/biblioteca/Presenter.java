@@ -9,7 +9,7 @@ public class Presenter {
         this.printStream = printStream;
     }
 
-    public void print(String message) {
-        printStream.print(message);
+    public void print(Object message) {
+        printStream.println(message);
     }
 }

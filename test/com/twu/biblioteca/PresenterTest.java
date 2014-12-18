@@ -11,11 +11,11 @@ import static org.junit.Assert.assertThat;
 public class PresenterTest {
 
     @Test
-    public void shouldPrintWelcomeMessage() throws Exception {
+    public void shouldPrintAMessage() throws Exception {
         ByteArrayOutputStream outSpy = new ByteArrayOutputStream();
         Presenter presenter = new Presenter(new PrintStream(outSpy));
         presenter.print("A message");
 
-        assertThat(outSpy.toString(), equalTo("A message"));
+        assertThat(outSpy.toString(), equalTo("A message\n"));
     }
 }
