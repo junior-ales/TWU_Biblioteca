@@ -8,11 +8,11 @@ public class BibliotecaApp {
         this.presenter = presenter;
     }
 
-    public static void main(String[] args) {
-        new BibliotecaApp(new Presenter(System.out));
-    }
-
     public void init() {
         presenter.printWelcomeMessage();
+    }
+
+    public static void main(String[] args) {
+        new BibliotecaApp(new Presenter(System.out)).init();
     }
 }
